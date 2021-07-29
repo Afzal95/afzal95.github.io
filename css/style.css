@@ -257,13 +257,14 @@ p {
   color: #707070;
 }
 .projects > .cards > .card > .card-body .links {
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin: 0.5rem 0;
 }
 .projects > .cards > .card > .card-body .links p {
-  font-weight: 600;
-  color: #707070;
+  justify-content: left;
+  font-weight: 500;
+  color: #2a295a;
 }
 .projects > .cards > .card > .card-body .links img {
   width: 40px;
@@ -310,28 +311,29 @@ p {
   padding: 0.5rem;
 }
 
-.github-calendar-div {
-  margin: 2rem 0;
-}
-.github-calendar-div .calendar-container {
-  margin: 1rem auto;
-  padding: 1rem;
-  width: 70%;
-  border-radius: 5px;
-  box-shadow: 0 0 10px 10px #eee;
-}
-@media all and (max-width: 900px) {
-  .github-calendar-div .calendar-container {
-    width: 100%;
-    box-shadow: none;
-  }
-}
-.github-calendar-div h2 {
-  padding: 1rem;
-}
-.github-calendar-div h2 img {
-  padding-top: 1rem;
-  width: 120px;
+.git {
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px 10px whitesmoke;
 }
 
-/*# sourceMappingURL=style.css.map */
+.gitdiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media all and (max-width: 900px) {
+  .gitdiv {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .git {
+    max-width: 500px;
+  }
+  .gitdiv {
+    display: block;
+    justify-content: center;
+  }
+}
