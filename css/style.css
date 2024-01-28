@@ -90,7 +90,7 @@ p {
   padding: 0.5rem;
 }
 .info > .social-icons a img {
-  width: 40px;
+  /* width: 40px; */
   transition: transform 300ms;
 }
 .info > .social-icons a img:hover {
